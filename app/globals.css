@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  --font-open-dyslexic: OpenDyslexic, sans-serif;
+  --navbar-height: 70px;
+}
+
+* {
+  font-family: var(--font-open-dyslexic);
+}
+
+@layer base {
+  body {
+    @apply bg-[#f1f1f1] text-gray-900 min-h-screen;
+    /* Increased padding to ensure content is below navbar */
+  }
+}
+
